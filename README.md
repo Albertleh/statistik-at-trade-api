@@ -2,29 +2,22 @@
 
 AT Trade Pulse API is a compact FastAPI + Postgres service that ingests Statistics Austria trade indices and serves clean, queryable time series for quick analysis, dashboards, or interview-ready demos.
 
-> This README includes commands and context so a non-technical reader can follow along.
-
 ## CV summary (copy/paste ready)
 Built an end-to-end data product for Austrian trade indices: automated ingestion, raw storage, analytics-ready mart modeling (dbt), and a Streamlit dashboard with momentum, seasonality, and sector comparison views.
 
-## Skills demonstrated
+## Key Features
 - Data ingestion & normalization (Python, FastAPI)
 - SQL modeling & testing (dbt, Postgres)
 - Analytics API design (query filters, latest deltas)
 - Data visualization (Streamlit + Plotly)
 - Reproducible local setup (Docker Compose)
 
-## Portfolio screenshots
-Add 2–3 screenshots here (recommended):
-1) Latest snapshot + line chart + YoY bar  
-2) Nominal vs. real with gap  
-3) Seasonality heatmap + sector comparison  
+<img width="1725" height="565" alt="image" src="https://github.com/user-attachments/assets/83b8c4a1-9d98-437a-bf9f-592a28cf4792" />
+<img width="1696" height="1279" alt="image" src="https://github.com/user-attachments/assets/70412e4c-e040-47ab-a843-ba5d13bd0e26" />
+<img width="1697" height="1304" alt="image" src="https://github.com/user-attachments/assets/422ed1db-656d-4d71-97cd-9796f88af366" />
 
-```
-+---------+      +-----------+      +----------------------+
-|  CSV    | ---> |  FastAPI  | ---> | Postgres (raw/marts) |
-+---------+      +-----------+      +----------------------+
-```
+
+
 
 **Key endpoints**
 - `GET /health`
@@ -34,12 +27,6 @@ Add 2–3 screenshots here (recommended):
 - `GET /latest?nace=<code>&metric=<metric>`
 - `GET /insights/nominal-vs-real?nace=<code>`
 
-**Run in 3 commands**
-```bash
-cp .env.example .env
-./scripts/run.sh
-open http://localhost:8000/docs
-```
 
 ## Exact commands to reproduce the dashboard flow
 ```bash
@@ -71,12 +58,6 @@ DBT_PROFILES_DIR=./dbt dbt run --project-dir ./dbt
 DBT_PROFILES_DIR=./dbt dbt test --project-dir ./dbt
 ```
 
-## Key deliverables (what to show in an interview)
-- **ETL**: live ingestion from Statistik Austria into raw + mart tables.
-- **Modeling**: dbt model with tests and lineage.
-- **Analytics**: FastAPI endpoints for latest + time series.
-- **Visualization**: Streamlit dashboard with business-friendly charts.
-
 ## Quick verification (Swagger + curl)
 1. Open Swagger UI: http://localhost:8000/docs
 2. Click **POST /ingest** → **Try it out** → set `mode=mock` → **Execute**.
@@ -85,11 +66,3 @@ DBT_PROFILES_DIR=./dbt dbt test --project-dir ./dbt
    - **GET /series** for a time series window.
    - **GET /insights/nominal-vs-real** for the latest nominal vs real gap.
 
-### cURL examples
-```bash
-curl -X POST "http://localhost:8000/ingest?mode=mock"
-curl "http://localhost:8000/nace"
-curl "http://localhost:8000/series?nace=47&metric=uidxnom&start=2021-01-01&end=2021-03-01"
-curl "http://localhost:8000/latest?nace=47&metric=uidxnom"
-curl "http://localhost:8000/insights/nominal-vs-real?nace=47"
-```
