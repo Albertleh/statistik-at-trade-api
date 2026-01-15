@@ -1,0 +1,49 @@
+services:
+  postgres:
+    # Postgres database for raw and marts schemas.
+    image: postgres:16
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./app/sql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+  api:
+    # FastAPI service serving ingestion and analytics endpoints.
+    image: python:3.11-slim
+    working_dir: /workspace
+    environment:
+      POSTGRES_HOST: ${POSTGRES_HOST}
+      POSTGRES_PORT: ${POSTGRES_PORT}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      DATA_URL: ${DATA_URL}
+    volumes:
+      - ./:/workspace
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+    command: >
+      bash -c "pip install -r /workspace/requirements.txt &&
+      uvicorn app.main:app --host 0.0.0.0 --port 8000"
+  dashboard:
+    # Streamlit dashboard for analytics and charts.
+    image: python:3.11-slim
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+    command: >
+      bash -c "pip install -r /workspace/requirements_dashboard.txt &&
+      streamlit run dashboard/app.py --server.address 0.0.0.0 --server.port 8501"
+volumes:
+  # Persistent storage for Postgres.
+  postgres_data:

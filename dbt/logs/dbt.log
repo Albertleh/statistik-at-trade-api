@@ -1,0 +1,1313 @@
+[0m18:19:06.396976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101b9550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1123479d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112347c50>]}
+
+
+============================== 18:19:06.399502 | 3291dadd-4488-441b-ad5d-916537edaf2a ==============================
+[0m18:19:06.399502 [info ] [MainThread]: Running with dbt=1.8.8
+[0m18:19:06.399738 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --project-dir ./dbt', 'send_anonymous_usage_stats': 'True'}
+[0m18:19:08.099696 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "at_trade_pulse", target "dev" invalid: '${POSTGRES_PORT}' is not of type 'integer'
+[0m18:19:08.101941 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.7338188, "process_user_time": 0.523982, "process_kernel_time": 0.109349, "process_mem_max_rss": "113491968", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m18:19:08.102136 [debug] [MainThread]: Command `dbt run` failed at 18:19:08.102089 after 1.73 seconds
+[0m18:19:08.102281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112397490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1128fef90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1123c1590>]}
+[0m18:19:08.102425 [debug] [MainThread]: Flushing usage events
+[0m18:19:22.862324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070d5550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b0b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b0bc50>]}
+
+
+============================== 18:19:22.864487 | c0f90a92-1962-4085-8007-8d7722ba62cc ==============================
+[0m18:19:22.864487 [info ] [MainThread]: Running with dbt=1.8.8
+[0m18:19:22.864711 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'dbt/logs', 'fail_fast': 'False', 'profiles_dir': './dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt test --project-dir ./dbt', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:19:22.885849 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "at_trade_pulse", target "dev" invalid: '${POSTGRES_PORT}' is not of type 'integer'
+[0m18:19:22.887394 [debug] [MainThread]: Resource report: {"command_name": "test", "command_wall_clock_time": 0.04709825, "process_user_time": 0.435557, "process_kernel_time": 0.082744, "process_mem_max_rss": "112689152", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m18:19:22.887607 [debug] [MainThread]: Command `dbt test` failed at 18:19:22.887564 after 0.05 seconds
+[0m18:19:22.887741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b5b490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b682f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108b89590>]}
+[0m18:19:22.887864 [debug] [MainThread]: Flushing usage events
+[0m18:20:22.363616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1107b9550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a479d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a47c50>]}
+
+
+============================== 18:20:22.366083 | 2ae9a63e-f459-4e87-9fe4-d34757d0f19d ==============================
+[0m18:20:22.366083 [info ] [MainThread]: Running with dbt=1.8.8
+[0m18:20:22.366299 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'dbt/logs', 'debug': 'False', 'profiles_dir': './dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --project-dir ./dbt', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:20:22.397123 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "at_trade_pulse", target "dev" invalid: '${POSTGRES_PORT}' is not of type 'integer'
+[0m18:20:22.399049 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.058441125, "process_user_time": 0.431384, "process_kernel_time": 0.096074, "process_mem_max_rss": "112738304", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m18:20:22.399211 [debug] [MainThread]: Command `dbt run` failed at 18:20:22.399174 after 0.06 seconds
+[0m18:20:22.399333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a97490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ffef90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ac1590>]}
+[0m18:20:22.399451 [debug] [MainThread]: Flushing usage events
+[0m18:22:17.738772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1066b9550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119b479d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119b47c50>]}
+
+
+============================== 18:22:17.741998 | 6b3f5b25-fa61-42b0-a864-4380cea404bd ==============================
+[0m18:22:17.741998 [info ] [MainThread]: Running with dbt=1.8.8
+[0m18:22:17.742355 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'dbt/logs', 'fail_fast': 'False', 'profiles_dir': './dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --project-dir ./dbt', 'send_anonymous_usage_stats': 'True'}
+[0m18:22:17.799758 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "at_trade_pulse", target "dev" invalid: '${POSTGRES_PORT}' is not of type 'integer'
+[0m18:22:17.801852 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.08829829, "process_user_time": 0.433621, "process_kernel_time": 0.111616, "process_mem_max_rss": "111312896", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m18:22:17.802074 [debug] [MainThread]: Command `dbt run` failed at 18:22:17.802024 after 0.09 seconds
+[0m18:22:17.802240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119b97490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a0faf90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119bc5590>]}
+[0m18:22:17.802384 [debug] [MainThread]: Flushing usage events
+[0m18:28:36.724915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061b9550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1103479d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110347c50>]}
+
+
+============================== 18:28:36.727560 | 898d246c-d4b7-439c-8ed8-b7370c875bc6 ==============================
+[0m18:28:36.727560 [info ] [MainThread]: Running with dbt=1.8.8
+[0m18:28:36.727793 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --project-dir ./dbt', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:28:36.846246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '898d246c-d4b7-439c-8ed8-b7370c875bc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1110ca190>]}
+[0m18:28:36.862007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '898d246c-d4b7-439c-8ed8-b7370c875bc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1103cb790>]}
+[0m18:28:36.862465 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m18:28:36.869747 [debug] [MainThread]: checksum: ec53e341a936509427e16df1c646386a84befec52c1957e3f4359fbc36fc93f5, vars: {}, profile: , target: , version: 1.8.8
+[0m18:28:36.870133 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m18:28:36.870271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '898d246c-d4b7-439c-8ed8-b7370c875bc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110207550>]}
+[0m18:28:37.182307 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m18:28:37.182548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '898d246c-d4b7-439c-8ed8-b7370c875bc6', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111eb2f0>]}
+[0m18:28:37.301731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '898d246c-d4b7-439c-8ed8-b7370c875bc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114b37d90>]}
+[0m18:28:37.339973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '898d246c-d4b7-439c-8ed8-b7370c875bc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111223110>]}
+[0m18:28:37.340151 [info ] [MainThread]: Found 1 model, 5 data tests, 1 source, 423 macros
+[0m18:28:37.340271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '898d246c-d4b7-439c-8ed8-b7370c875bc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114b3ef90>]}
+[0m18:28:37.340888 [info ] [MainThread]: 
+[0m18:28:37.341090 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m18:28:37.341397 [debug] [ThreadPool]: Acquiring new postgres connection 'list_tradepulse'
+[0m18:28:37.395671 [debug] [ThreadPool]: Using postgres connection "list_tradepulse"
+[0m18:28:37.395833 [debug] [ThreadPool]: On list_tradepulse: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "connection_name": "list_tradepulse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m18:28:37.395923 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:28:37.508047 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.112 seconds
+[0m18:28:37.508863 [debug] [ThreadPool]: On list_tradepulse: Close
+[0m18:28:37.509230 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tradepulse, now create_tradepulse_marts_marts)
+[0m18:28:37.509442 [debug] [ThreadPool]: Creating schema "database: "tradepulse"
+schema: "marts_marts"
+"
+[0m18:28:37.511826 [debug] [ThreadPool]: Using postgres connection "create_tradepulse_marts_marts"
+[0m18:28:37.511971 [debug] [ThreadPool]: On create_tradepulse_marts_marts: BEGIN
+[0m18:28:37.512084 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:28:37.519912 [debug] [ThreadPool]: SQL status: BEGIN in 0.008 seconds
+[0m18:28:37.520033 [debug] [ThreadPool]: Using postgres connection "create_tradepulse_marts_marts"
+[0m18:28:37.520141 [debug] [ThreadPool]: On create_tradepulse_marts_marts: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "connection_name": "create_tradepulse_marts_marts"} */
+create schema if not exists "marts_marts"
+[0m18:28:37.521202 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.001 seconds
+[0m18:28:37.521580 [debug] [ThreadPool]: On create_tradepulse_marts_marts: COMMIT
+[0m18:28:37.521704 [debug] [ThreadPool]: Using postgres connection "create_tradepulse_marts_marts"
+[0m18:28:37.521808 [debug] [ThreadPool]: On create_tradepulse_marts_marts: COMMIT
+[0m18:28:37.523313 [debug] [ThreadPool]: SQL status: COMMIT in 0.001 seconds
+[0m18:28:37.523426 [debug] [ThreadPool]: On create_tradepulse_marts_marts: Close
+[0m18:28:37.523878 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_tradepulse_marts_marts, now list_tradepulse_marts_marts)
+[0m18:28:37.526326 [debug] [ThreadPool]: Using postgres connection "list_tradepulse_marts_marts"
+[0m18:28:37.526501 [debug] [ThreadPool]: On list_tradepulse_marts_marts: BEGIN
+[0m18:28:37.526626 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:28:37.535704 [debug] [ThreadPool]: SQL status: BEGIN in 0.009 seconds
+[0m18:28:37.535865 [debug] [ThreadPool]: Using postgres connection "list_tradepulse_marts_marts"
+[0m18:28:37.535982 [debug] [ThreadPool]: On list_tradepulse_marts_marts: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "connection_name": "list_tradepulse_marts_marts"} */
+select
+      'tradepulse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'marts_marts'
+    union all
+    select
+      'tradepulse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'marts_marts'
+    union all
+    select
+      'tradepulse' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'marts_marts'
+  
+[0m18:28:37.540550 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.004 seconds
+[0m18:28:37.541066 [debug] [ThreadPool]: On list_tradepulse_marts_marts: ROLLBACK
+[0m18:28:37.541469 [debug] [ThreadPool]: On list_tradepulse_marts_marts: Close
+[0m18:28:37.544499 [debug] [MainThread]: Using postgres connection "master"
+[0m18:28:37.544618 [debug] [MainThread]: On master: BEGIN
+[0m18:28:37.544708 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:28:37.551468 [debug] [MainThread]: SQL status: BEGIN in 0.007 seconds
+[0m18:28:37.551580 [debug] [MainThread]: Using postgres connection "master"
+[0m18:28:37.551708 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m18:28:37.555037 [debug] [MainThread]: SQL status: SELECT 0 in 0.003 seconds
+[0m18:28:37.555564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '898d246c-d4b7-439c-8ed8-b7370c875bc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114975bd0>]}
+[0m18:28:37.555751 [debug] [MainThread]: On master: ROLLBACK
+[0m18:28:37.556101 [debug] [MainThread]: Using postgres connection "master"
+[0m18:28:37.556250 [debug] [MainThread]: On master: BEGIN
+[0m18:28:37.556737 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m18:28:37.556841 [debug] [MainThread]: On master: COMMIT
+[0m18:28:37.556930 [debug] [MainThread]: Using postgres connection "master"
+[0m18:28:37.557025 [debug] [MainThread]: On master: COMMIT
+[0m18:28:37.557284 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m18:28:37.557382 [debug] [MainThread]: On master: Close
+[0m18:28:37.557547 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:28:37.557668 [info ] [MainThread]: 
+[0m18:28:37.558848 [debug] [Thread-1 (]: Began running node model.at_trade_pulse.trade_index
+[0m18:28:37.559073 [info ] [Thread-1 (]: 1 of 1 START sql table model marts_marts.trade_index ........................... [RUN]
+[0m18:28:37.559250 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_tradepulse_marts_marts, now model.at_trade_pulse.trade_index)
+[0m18:28:37.559368 [debug] [Thread-1 (]: Began compiling node model.at_trade_pulse.trade_index
+[0m18:28:37.562085 [debug] [Thread-1 (]: Writing injected SQL for node "model.at_trade_pulse.trade_index"
+[0m18:28:37.562661 [debug] [Thread-1 (]: Began executing node model.at_trade_pulse.trade_index
+[0m18:28:37.577032 [debug] [Thread-1 (]: Writing runtime sql for node "model.at_trade_pulse.trade_index"
+[0m18:28:37.577485 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m18:28:37.577600 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: BEGIN
+[0m18:28:37.577702 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:28:37.585768 [debug] [Thread-1 (]: SQL status: BEGIN in 0.008 seconds
+[0m18:28:37.585939 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m18:28:37.586086 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "model.at_trade_pulse.trade_index"} */
+
+  
+    
+
+  create  table "tradepulse"."marts_marts"."trade_index__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with raw_data as (
+    select
+        period_key,
+        nace_key,
+        uidxnom,
+        uidxreal,
+        beschidx,
+        uidxnsb,
+        uidxrsb,
+        ingested_at
+    from raw.statat_trade_raw
+),
+
+normalized as (
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'uidxnom' as metric,
+        uidxnom as value,
+        ingested_at
+    from raw_data
+    where uidxnom is not null
+
+    union all
+
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'uidxreal' as metric,
+        uidxreal as value,
+        ingested_at
+    from raw_data
+    where uidxreal is not null
+
+    union all
+
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'beschidx' as metric,
+        beschidx as value,
+        ingested_at
+    from raw_data
+    where beschidx is not null
+
+    union all
+
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'uidxnsb' as metric,
+        uidxnsb as value,
+        ingested_at
+    from raw_data
+    where uidxnsb is not null
+
+    union all
+
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'uidxrsb' as metric,
+        uidxrsb as value,
+        ingested_at
+    from raw_data
+    where uidxrsb is not null
+)
+
+select
+    period_date,
+    nace_code,
+    metric,
+    value,
+    ingested_at
+from normalized
+where period_date is not null
+  );
+  
+[0m18:28:37.601332 [debug] [Thread-1 (]: SQL status: SELECT 12555 in 0.015 seconds
+[0m18:28:37.604149 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m18:28:37.604322 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "model.at_trade_pulse.trade_index"} */
+alter table "tradepulse"."marts_marts"."trade_index__dbt_tmp" rename to "trade_index"
+[0m18:28:37.604885 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m18:28:37.611731 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: COMMIT
+[0m18:28:37.611923 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m18:28:37.612041 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: COMMIT
+[0m18:28:37.614146 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m18:28:37.616520 [debug] [Thread-1 (]: Applying DROP to: "tradepulse"."marts_marts"."trade_index__dbt_backup"
+[0m18:28:37.618226 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m18:28:37.618361 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "model.at_trade_pulse.trade_index"} */
+drop table if exists "tradepulse"."marts_marts"."trade_index__dbt_backup" cascade
+[0m18:28:37.618807 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.000 seconds
+[0m18:28:37.619711 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: Close
+[0m18:28:37.620240 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '898d246c-d4b7-439c-8ed8-b7370c875bc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107849b30>]}
+[0m18:28:37.620467 [info ] [Thread-1 (]: 1 of 1 OK created sql table model marts_marts.trade_index ...................... [[32mSELECT 12555[0m in 0.06s]
+[0m18:28:37.620675 [debug] [Thread-1 (]: Finished running node model.at_trade_pulse.trade_index
+[0m18:28:37.621237 [debug] [MainThread]: Using postgres connection "master"
+[0m18:28:37.621354 [debug] [MainThread]: On master: BEGIN
+[0m18:28:37.621448 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:28:37.626081 [debug] [MainThread]: SQL status: BEGIN in 0.005 seconds
+[0m18:28:37.626230 [debug] [MainThread]: On master: COMMIT
+[0m18:28:37.626332 [debug] [MainThread]: Using postgres connection "master"
+[0m18:28:37.626417 [debug] [MainThread]: On master: COMMIT
+[0m18:28:37.626707 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m18:28:37.626848 [debug] [MainThread]: On master: Close
+[0m18:28:37.627006 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:28:37.627106 [debug] [MainThread]: Connection 'model.at_trade_pulse.trade_index' was properly closed.
+[0m18:28:37.627215 [info ] [MainThread]: 
+[0m18:28:37.627329 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.29 seconds (0.29s).
+[0m18:28:37.627559 [debug] [MainThread]: Command end result
+[0m18:28:37.638765 [info ] [MainThread]: 
+[0m18:28:37.638993 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:28:37.639102 [info ] [MainThread]: 
+[0m18:28:37.639217 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m18:28:37.641271 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.9423881, "process_user_time": 1.001856, "process_kernel_time": 0.170446, "process_mem_max_rss": "141082624", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m18:28:37.641440 [debug] [MainThread]: Command `dbt run` succeeded at 18:28:37.641404 after 0.94 seconds
+[0m18:28:37.641581 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110342b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1148f6a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11038c830>]}
+[0m18:28:37.641732 [debug] [MainThread]: Flushing usage events
+[0m18:29:26.070145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105185550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bc39d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bc3c50>]}
+
+
+============================== 18:29:26.072409 | 967e44fa-994d-4e01-bb78-f258863812c2 ==============================
+[0m18:29:26.072409 [info ] [MainThread]: Running with dbt=1.8.8
+[0m18:29:26.072625 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': './dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run --project-dir ./dbt', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:29:26.144373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '967e44fa-994d-4e01-bb78-f258863812c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107292190>]}
+[0m18:29:26.160372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '967e44fa-994d-4e01-bb78-f258863812c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c47790>]}
+[0m18:29:26.161380 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m18:29:26.168979 [debug] [MainThread]: checksum: ec53e341a936509427e16df1c646386a84befec52c1957e3f4359fbc36fc93f5, vars: {}, profile: , target: , version: 1.8.8
+[0m18:29:26.234880 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:29:26.235053 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:29:26.248629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '967e44fa-994d-4e01-bb78-f258863812c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a83950>]}
+[0m18:29:26.284780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '967e44fa-994d-4e01-bb78-f258863812c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ac4d70>]}
+[0m18:29:26.284990 [info ] [MainThread]: Found 1 model, 5 data tests, 1 source, 423 macros
+[0m18:29:26.285114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '967e44fa-994d-4e01-bb78-f258863812c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b65550>]}
+[0m18:29:26.285817 [info ] [MainThread]: 
+[0m18:29:26.286062 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m18:29:26.286401 [debug] [ThreadPool]: Acquiring new postgres connection 'list_tradepulse'
+[0m18:29:26.310407 [debug] [ThreadPool]: Using postgres connection "list_tradepulse"
+[0m18:29:26.310586 [debug] [ThreadPool]: On list_tradepulse: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "connection_name": "list_tradepulse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m18:29:26.310690 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:29:26.341084 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.030 seconds
+[0m18:29:26.341716 [debug] [ThreadPool]: On list_tradepulse: Close
+[0m18:29:26.342360 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tradepulse, now list_tradepulse_marts_marts)
+[0m18:29:26.344690 [debug] [ThreadPool]: Using postgres connection "list_tradepulse_marts_marts"
+[0m18:29:26.344820 [debug] [ThreadPool]: On list_tradepulse_marts_marts: BEGIN
+[0m18:29:26.344903 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:29:26.354565 [debug] [ThreadPool]: SQL status: BEGIN in 0.010 seconds
+[0m18:29:26.354691 [debug] [ThreadPool]: Using postgres connection "list_tradepulse_marts_marts"
+[0m18:29:26.354785 [debug] [ThreadPool]: On list_tradepulse_marts_marts: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "connection_name": "list_tradepulse_marts_marts"} */
+select
+      'tradepulse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'marts_marts'
+    union all
+    select
+      'tradepulse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'marts_marts'
+    union all
+    select
+      'tradepulse' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'marts_marts'
+  
+[0m18:29:26.358311 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.003 seconds
+[0m18:29:26.358779 [debug] [ThreadPool]: On list_tradepulse_marts_marts: ROLLBACK
+[0m18:29:26.359191 [debug] [ThreadPool]: On list_tradepulse_marts_marts: Close
+[0m18:29:26.360554 [debug] [MainThread]: Using postgres connection "master"
+[0m18:29:26.360652 [debug] [MainThread]: On master: BEGIN
+[0m18:29:26.360729 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:29:26.367763 [debug] [MainThread]: SQL status: BEGIN in 0.007 seconds
+[0m18:29:26.367906 [debug] [MainThread]: Using postgres connection "master"
+[0m18:29:26.368019 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m18:29:26.371894 [debug] [MainThread]: SQL status: SELECT 0 in 0.004 seconds
+[0m18:29:26.372397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '967e44fa-994d-4e01-bb78-f258863812c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e607a0>]}
+[0m18:29:26.372570 [debug] [MainThread]: On master: ROLLBACK
+[0m18:29:26.373115 [debug] [MainThread]: Using postgres connection "master"
+[0m18:29:26.373204 [debug] [MainThread]: On master: BEGIN
+[0m18:29:26.373929 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m18:29:26.374015 [debug] [MainThread]: On master: COMMIT
+[0m18:29:26.374095 [debug] [MainThread]: Using postgres connection "master"
+[0m18:29:26.374173 [debug] [MainThread]: On master: COMMIT
+[0m18:29:26.374536 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m18:29:26.374624 [debug] [MainThread]: On master: Close
+[0m18:29:26.374784 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:29:26.374895 [info ] [MainThread]: 
+[0m18:29:26.376902 [debug] [Thread-1 (]: Began running node model.at_trade_pulse.trade_index
+[0m18:29:26.377202 [info ] [Thread-1 (]: 1 of 1 START sql table model marts_marts.trade_index ........................... [RUN]
+[0m18:29:26.377407 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_tradepulse_marts_marts, now model.at_trade_pulse.trade_index)
+[0m18:29:26.377883 [debug] [Thread-1 (]: Began compiling node model.at_trade_pulse.trade_index
+[0m18:29:26.380816 [debug] [Thread-1 (]: Writing injected SQL for node "model.at_trade_pulse.trade_index"
+[0m18:29:26.381185 [debug] [Thread-1 (]: Began executing node model.at_trade_pulse.trade_index
+[0m18:29:26.396377 [debug] [Thread-1 (]: Writing runtime sql for node "model.at_trade_pulse.trade_index"
+[0m18:29:26.396749 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m18:29:26.396861 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: BEGIN
+[0m18:29:26.396956 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:29:26.406543 [debug] [Thread-1 (]: SQL status: BEGIN in 0.010 seconds
+[0m18:29:26.406656 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m18:29:26.406773 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "model.at_trade_pulse.trade_index"} */
+
+  
+    
+
+  create  table "tradepulse"."marts_marts"."trade_index__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with raw_data as (
+    select
+        period_key,
+        nace_key,
+        uidxnom,
+        uidxreal,
+        beschidx,
+        uidxnsb,
+        uidxrsb,
+        ingested_at
+    from raw.statat_trade_raw
+),
+
+normalized as (
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'uidxnom' as metric,
+        uidxnom as value,
+        ingested_at
+    from raw_data
+    where uidxnom is not null
+
+    union all
+
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'uidxreal' as metric,
+        uidxreal as value,
+        ingested_at
+    from raw_data
+    where uidxreal is not null
+
+    union all
+
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'beschidx' as metric,
+        beschidx as value,
+        ingested_at
+    from raw_data
+    where beschidx is not null
+
+    union all
+
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'uidxnsb' as metric,
+        uidxnsb as value,
+        ingested_at
+    from raw_data
+    where uidxnsb is not null
+
+    union all
+
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'uidxrsb' as metric,
+        uidxrsb as value,
+        ingested_at
+    from raw_data
+    where uidxrsb is not null
+)
+
+select
+    period_date,
+    nace_code,
+    metric,
+    value,
+    ingested_at
+from normalized
+where period_date is not null
+  );
+  
+[0m18:29:26.429636 [debug] [Thread-1 (]: SQL status: SELECT 12555 in 0.023 seconds
+[0m18:29:26.431903 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m18:29:26.432041 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "model.at_trade_pulse.trade_index"} */
+alter table "tradepulse"."marts_marts"."trade_index" rename to "trade_index__dbt_backup"
+[0m18:29:26.432574 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m18:29:26.434877 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m18:29:26.435000 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "model.at_trade_pulse.trade_index"} */
+alter table "tradepulse"."marts_marts"."trade_index__dbt_tmp" rename to "trade_index"
+[0m18:29:26.435472 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m18:29:26.442154 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: COMMIT
+[0m18:29:26.442288 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m18:29:26.442393 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: COMMIT
+[0m18:29:26.444193 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m18:29:26.446107 [debug] [Thread-1 (]: Applying DROP to: "tradepulse"."marts_marts"."trade_index__dbt_backup"
+[0m18:29:26.447918 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m18:29:26.448034 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "model.at_trade_pulse.trade_index"} */
+drop table if exists "tradepulse"."marts_marts"."trade_index__dbt_backup" cascade
+[0m18:29:26.449982 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.002 seconds
+[0m18:29:26.450845 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: Close
+[0m18:29:26.451392 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '967e44fa-994d-4e01-bb78-f258863812c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f18dd0>]}
+[0m18:29:26.451616 [info ] [Thread-1 (]: 1 of 1 OK created sql table model marts_marts.trade_index ...................... [[32mSELECT 12555[0m in 0.07s]
+[0m18:29:26.451832 [debug] [Thread-1 (]: Finished running node model.at_trade_pulse.trade_index
+[0m18:29:26.452459 [debug] [MainThread]: Using postgres connection "master"
+[0m18:29:26.452574 [debug] [MainThread]: On master: BEGIN
+[0m18:29:26.452668 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:29:26.459771 [debug] [MainThread]: SQL status: BEGIN in 0.007 seconds
+[0m18:29:26.459936 [debug] [MainThread]: On master: COMMIT
+[0m18:29:26.460031 [debug] [MainThread]: Using postgres connection "master"
+[0m18:29:26.460115 [debug] [MainThread]: On master: COMMIT
+[0m18:29:26.460373 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m18:29:26.460494 [debug] [MainThread]: On master: Close
+[0m18:29:26.460647 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:29:26.460746 [debug] [MainThread]: Connection 'model.at_trade_pulse.trade_index' was properly closed.
+[0m18:29:26.460857 [info ] [MainThread]: 
+[0m18:29:26.460966 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.17 seconds (0.17s).
+[0m18:29:26.461454 [debug] [MainThread]: Command end result
+[0m18:29:26.470700 [info ] [MainThread]: 
+[0m18:29:26.470926 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:29:26.471040 [info ] [MainThread]: 
+[0m18:29:26.471151 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m18:29:26.473208 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.4245367, "process_user_time": 0.655776, "process_kernel_time": 0.140651, "process_mem_max_rss": "135856128", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m18:29:26.473393 [debug] [MainThread]: Command `dbt run` succeeded at 18:29:26.473357 after 0.42 seconds
+[0m18:29:26.473545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b27280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f20af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f20cd0>]}
+[0m18:29:26.473670 [debug] [MainThread]: Flushing usage events
+[0m18:29:34.723308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102c45550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046839d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104683c50>]}
+
+
+============================== 18:29:34.725254 | 98bb6531-9efb-4e2c-aca2-b327710adec6 ==============================
+[0m18:29:34.725254 [info ] [MainThread]: Running with dbt=1.8.8
+[0m18:29:34.725488 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': './dbt', 'log_path': 'dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt test --project-dir ./dbt', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:29:34.786514 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '98bb6531-9efb-4e2c-aca2-b327710adec6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d52190>]}
+[0m18:29:34.802133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '98bb6531-9efb-4e2c-aca2-b327710adec6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104707790>]}
+[0m18:29:34.802437 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m18:29:34.808744 [debug] [MainThread]: checksum: ec53e341a936509427e16df1c646386a84befec52c1957e3f4359fbc36fc93f5, vars: {}, profile: , target: , version: 1.8.8
+[0m18:29:34.861438 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:29:34.861624 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:29:34.875873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '98bb6531-9efb-4e2c-aca2-b327710adec6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104543950>]}
+[0m18:29:34.912940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '98bb6531-9efb-4e2c-aca2-b327710adec6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056564e0>]}
+[0m18:29:34.913116 [info ] [MainThread]: Found 1 model, 5 data tests, 1 source, 423 macros
+[0m18:29:34.913232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '98bb6531-9efb-4e2c-aca2-b327710adec6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056d9710>]}
+[0m18:29:34.913897 [info ] [MainThread]: 
+[0m18:29:34.914107 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m18:29:34.914481 [debug] [ThreadPool]: Acquiring new postgres connection 'list_tradepulse_marts_marts'
+[0m18:29:34.936056 [debug] [ThreadPool]: Using postgres connection "list_tradepulse_marts_marts"
+[0m18:29:34.936237 [debug] [ThreadPool]: On list_tradepulse_marts_marts: BEGIN
+[0m18:29:34.936336 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:29:34.957625 [debug] [ThreadPool]: SQL status: BEGIN in 0.021 seconds
+[0m18:29:34.957798 [debug] [ThreadPool]: Using postgres connection "list_tradepulse_marts_marts"
+[0m18:29:34.957903 [debug] [ThreadPool]: On list_tradepulse_marts_marts: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "connection_name": "list_tradepulse_marts_marts"} */
+select
+      'tradepulse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'marts_marts'
+    union all
+    select
+      'tradepulse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'marts_marts'
+    union all
+    select
+      'tradepulse' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'marts_marts'
+  
+[0m18:29:34.962770 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.005 seconds
+[0m18:29:34.963293 [debug] [ThreadPool]: On list_tradepulse_marts_marts: ROLLBACK
+[0m18:29:34.963703 [debug] [ThreadPool]: On list_tradepulse_marts_marts: Close
+[0m18:29:34.965328 [debug] [MainThread]: Using postgres connection "master"
+[0m18:29:34.965441 [debug] [MainThread]: On master: BEGIN
+[0m18:29:34.965526 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:29:34.973245 [debug] [MainThread]: SQL status: BEGIN in 0.008 seconds
+[0m18:29:34.973342 [debug] [MainThread]: Using postgres connection "master"
+[0m18:29:34.973460 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m18:29:34.977994 [debug] [MainThread]: SQL status: SELECT 0 in 0.004 seconds
+[0m18:29:34.978410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '98bb6531-9efb-4e2c-aca2-b327710adec6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a046d0>]}
+[0m18:29:34.978558 [debug] [MainThread]: On master: ROLLBACK
+[0m18:29:34.978866 [debug] [MainThread]: Using postgres connection "master"
+[0m18:29:34.978954 [debug] [MainThread]: On master: BEGIN
+[0m18:29:34.979477 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m18:29:34.979567 [debug] [MainThread]: On master: COMMIT
+[0m18:29:34.979644 [debug] [MainThread]: Using postgres connection "master"
+[0m18:29:34.979721 [debug] [MainThread]: On master: COMMIT
+[0m18:29:34.979999 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m18:29:34.980089 [debug] [MainThread]: On master: Close
+[0m18:29:34.980231 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:29:34.980344 [info ] [MainThread]: 
+[0m18:29:34.981258 [debug] [Thread-4 (]: Began running node test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd
+[0m18:29:34.981435 [debug] [Thread-3 (]: Began running node test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449
+[0m18:29:34.981571 [debug] [Thread-2 (]: Began running node test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94
+[0m18:29:34.981683 [debug] [Thread-1 (]: Began running node test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1
+[0m18:29:34.981819 [info ] [Thread-4 (]: 4 of 5 START test not_null_trade_index_period_date ............................. [RUN]
+[0m18:29:34.981989 [info ] [Thread-3 (]: 3 of 5 START test not_null_trade_index_nace_code ............................... [RUN]
+[0m18:29:34.982149 [info ] [Thread-2 (]: 2 of 5 START test not_null_trade_index_metric .................................. [RUN]
+[0m18:29:34.982298 [info ] [Thread-1 (]: 1 of 5 START test accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb  [RUN]
+[0m18:29:34.982552 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd'
+[0m18:29:34.982751 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449'
+[0m18:29:34.982903 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94'
+[0m18:29:34.983024 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_tradepulse_marts_marts, now test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1)
+[0m18:29:34.983145 [debug] [Thread-4 (]: Began compiling node test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd
+[0m18:29:34.983249 [debug] [Thread-3 (]: Began compiling node test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449
+[0m18:29:34.983347 [debug] [Thread-2 (]: Began compiling node test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94
+[0m18:29:34.983450 [debug] [Thread-1 (]: Began compiling node test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1
+[0m18:29:34.991127 [debug] [Thread-4 (]: Writing injected SQL for node "test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd"
+[0m18:29:34.992391 [debug] [Thread-3 (]: Writing injected SQL for node "test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449"
+[0m18:29:34.993691 [debug] [Thread-2 (]: Writing injected SQL for node "test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94"
+[0m18:29:34.996730 [debug] [Thread-1 (]: Writing injected SQL for node "test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1"
+[0m18:29:34.997200 [debug] [Thread-1 (]: Began executing node test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1
+[0m18:29:34.997339 [debug] [Thread-3 (]: Began executing node test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449
+[0m18:29:34.997443 [debug] [Thread-4 (]: Began executing node test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd
+[0m18:29:35.002005 [debug] [Thread-1 (]: Writing runtime sql for node "test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1"
+[0m18:29:35.002165 [debug] [Thread-2 (]: Began executing node test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94
+[0m18:29:35.002741 [debug] [Thread-3 (]: Writing runtime sql for node "test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449"
+[0m18:29:35.003259 [debug] [Thread-4 (]: Writing runtime sql for node "test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd"
+[0m18:29:35.003960 [debug] [Thread-2 (]: Writing runtime sql for node "test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94"
+[0m18:29:35.004293 [debug] [Thread-1 (]: Using postgres connection "test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1"
+[0m18:29:35.004427 [debug] [Thread-1 (]: On test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1: BEGIN
+[0m18:29:35.004554 [debug] [Thread-4 (]: Using postgres connection "test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd"
+[0m18:29:35.004655 [debug] [Thread-2 (]: Using postgres connection "test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94"
+[0m18:29:35.004759 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:29:35.004857 [debug] [Thread-3 (]: Using postgres connection "test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449"
+[0m18:29:35.004950 [debug] [Thread-4 (]: On test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd: BEGIN
+[0m18:29:35.005039 [debug] [Thread-2 (]: On test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94: BEGIN
+[0m18:29:35.005193 [debug] [Thread-3 (]: On test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449: BEGIN
+[0m18:29:35.005306 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m18:29:35.005411 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m18:29:35.005519 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m18:29:35.014462 [debug] [Thread-1 (]: SQL status: BEGIN in 0.010 seconds
+[0m18:29:35.014566 [debug] [Thread-1 (]: Using postgres connection "test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1"
+[0m18:29:35.014666 [debug] [Thread-1 (]: On test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        metric as value_field,
+        count(*) as n_records
+
+    from "tradepulse"."marts_marts"."trade_index"
+    group by metric
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'uidxnom','uidxreal','beschidx','uidxnsb','uidxrsb'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m18:29:35.014846 [debug] [Thread-4 (]: SQL status: BEGIN in 0.010 seconds
+[0m18:29:35.014986 [debug] [Thread-4 (]: Using postgres connection "test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd"
+[0m18:29:35.015109 [debug] [Thread-4 (]: On test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select period_date
+from "tradepulse"."marts_marts"."trade_index"
+where period_date is null
+
+
+
+      
+    ) dbt_internal_test
+[0m18:29:35.015484 [debug] [Thread-2 (]: SQL status: BEGIN in 0.010 seconds
+[0m18:29:35.015581 [debug] [Thread-2 (]: Using postgres connection "test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94"
+[0m18:29:35.015678 [debug] [Thread-3 (]: SQL status: BEGIN in 0.010 seconds
+[0m18:29:35.015789 [debug] [Thread-2 (]: On test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select metric
+from "tradepulse"."marts_marts"."trade_index"
+where metric is null
+
+
+
+      
+    ) dbt_internal_test
+[0m18:29:35.015888 [debug] [Thread-3 (]: Using postgres connection "test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449"
+[0m18:29:35.015997 [debug] [Thread-3 (]: On test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select nace_code
+from "tradepulse"."marts_marts"."trade_index"
+where nace_code is null
+
+
+
+      
+    ) dbt_internal_test
+[0m18:29:35.018008 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.003 seconds
+[0m18:29:35.018162 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.003 seconds
+[0m18:29:35.018273 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.002 seconds
+[0m18:29:35.019800 [debug] [Thread-4 (]: On test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd: ROLLBACK
+[0m18:29:35.019917 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.004 seconds
+[0m18:29:35.020328 [debug] [Thread-1 (]: On test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1: ROLLBACK
+[0m18:29:35.020721 [debug] [Thread-2 (]: On test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94: ROLLBACK
+[0m18:29:35.021219 [debug] [Thread-3 (]: On test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449: ROLLBACK
+[0m18:29:35.021347 [debug] [Thread-4 (]: On test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd: Close
+[0m18:29:35.021715 [debug] [Thread-1 (]: On test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1: Close
+[0m18:29:35.021843 [debug] [Thread-3 (]: On test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449: Close
+[0m18:29:35.021601 [info ] [Thread-4 (]: 4 of 5 PASS not_null_trade_index_period_date ................................... [[32mPASS[0m in 0.04s]
+[0m18:29:35.021972 [debug] [Thread-2 (]: On test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94: Close
+[0m18:29:35.022158 [info ] [Thread-1 (]: 1 of 5 PASS accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb  [[32mPASS[0m in 0.04s]
+[0m18:29:35.022321 [info ] [Thread-3 (]: 3 of 5 PASS not_null_trade_index_nace_code ..................................... [[32mPASS[0m in 0.04s]
+[0m18:29:35.022529 [debug] [Thread-4 (]: Finished running node test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd
+[0m18:29:35.022724 [debug] [Thread-1 (]: Finished running node test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1
+[0m18:29:35.022883 [info ] [Thread-2 (]: 2 of 5 PASS not_null_trade_index_metric ........................................ [[32mPASS[0m in 0.04s]
+[0m18:29:35.023098 [debug] [Thread-3 (]: Finished running node test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449
+[0m18:29:35.023268 [debug] [Thread-4 (]: Began running node test.at_trade_pulse.not_null_trade_index_value.7e2558b75c
+[0m18:29:35.023503 [debug] [Thread-2 (]: Finished running node test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94
+[0m18:29:35.023648 [info ] [Thread-4 (]: 5 of 5 START test not_null_trade_index_value ................................... [RUN]
+[0m18:29:35.023841 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.at_trade_pulse.not_null_trade_index_period_date.992666e0cd, now test.at_trade_pulse.not_null_trade_index_value.7e2558b75c)
+[0m18:29:35.023942 [debug] [Thread-4 (]: Began compiling node test.at_trade_pulse.not_null_trade_index_value.7e2558b75c
+[0m18:29:35.025193 [debug] [Thread-4 (]: Writing injected SQL for node "test.at_trade_pulse.not_null_trade_index_value.7e2558b75c"
+[0m18:29:35.025454 [debug] [Thread-4 (]: Began executing node test.at_trade_pulse.not_null_trade_index_value.7e2558b75c
+[0m18:29:35.025975 [debug] [Thread-4 (]: Writing runtime sql for node "test.at_trade_pulse.not_null_trade_index_value.7e2558b75c"
+[0m18:29:35.026156 [debug] [Thread-4 (]: Using postgres connection "test.at_trade_pulse.not_null_trade_index_value.7e2558b75c"
+[0m18:29:35.026250 [debug] [Thread-4 (]: On test.at_trade_pulse.not_null_trade_index_value.7e2558b75c: BEGIN
+[0m18:29:35.026335 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m18:29:35.033295 [debug] [Thread-4 (]: SQL status: BEGIN in 0.007 seconds
+[0m18:29:35.033472 [debug] [Thread-4 (]: Using postgres connection "test.at_trade_pulse.not_null_trade_index_value.7e2558b75c"
+[0m18:29:35.033581 [debug] [Thread-4 (]: On test.at_trade_pulse.not_null_trade_index_value.7e2558b75c: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "test.at_trade_pulse.not_null_trade_index_value.7e2558b75c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select value
+from "tradepulse"."marts_marts"."trade_index"
+where value is null
+
+
+
+      
+    ) dbt_internal_test
+[0m18:29:35.034833 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.001 seconds
+[0m18:29:35.035393 [debug] [Thread-4 (]: On test.at_trade_pulse.not_null_trade_index_value.7e2558b75c: ROLLBACK
+[0m18:29:35.035707 [debug] [Thread-4 (]: On test.at_trade_pulse.not_null_trade_index_value.7e2558b75c: Close
+[0m18:29:35.035999 [info ] [Thread-4 (]: 5 of 5 PASS not_null_trade_index_value ......................................... [[32mPASS[0m in 0.01s]
+[0m18:29:35.036244 [debug] [Thread-4 (]: Finished running node test.at_trade_pulse.not_null_trade_index_value.7e2558b75c
+[0m18:29:35.036868 [debug] [MainThread]: Using postgres connection "master"
+[0m18:29:35.036975 [debug] [MainThread]: On master: BEGIN
+[0m18:29:35.037062 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:29:35.042550 [debug] [MainThread]: SQL status: BEGIN in 0.005 seconds
+[0m18:29:35.042783 [debug] [MainThread]: On master: COMMIT
+[0m18:29:35.042909 [debug] [MainThread]: Using postgres connection "master"
+[0m18:29:35.043005 [debug] [MainThread]: On master: COMMIT
+[0m18:29:35.043272 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m18:29:35.043386 [debug] [MainThread]: On master: Close
+[0m18:29:35.043543 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:29:35.043632 [debug] [MainThread]: Connection 'test.at_trade_pulse.accepted_values_trade_index_metric__uidxnom__uidxreal__beschidx__uidxnsb__uidxrsb.ce09e791c1' was properly closed.
+[0m18:29:35.043729 [debug] [MainThread]: Connection 'test.at_trade_pulse.not_null_trade_index_value.7e2558b75c' was properly closed.
+[0m18:29:35.043807 [debug] [MainThread]: Connection 'test.at_trade_pulse.not_null_trade_index_nace_code.8ba0f75449' was properly closed.
+[0m18:29:35.043888 [debug] [MainThread]: Connection 'test.at_trade_pulse.not_null_trade_index_metric.6ca6b2dd94' was properly closed.
+[0m18:29:35.044001 [info ] [MainThread]: 
+[0m18:29:35.044115 [info ] [MainThread]: Finished running 5 data tests in 0 hours 0 minutes and 0.13 seconds (0.13s).
+[0m18:29:35.044511 [debug] [MainThread]: Command end result
+[0m18:29:35.053647 [info ] [MainThread]: 
+[0m18:29:35.053859 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:29:35.053990 [info ] [MainThread]: 
+[0m18:29:35.054112 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m18:29:35.055732 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.35332733, "process_user_time": 0.666313, "process_kernel_time": 0.11974, "process_mem_max_rss": "137347072", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m18:29:35.055943 [debug] [MainThread]: Command `dbt test` succeeded at 18:29:35.055906 after 0.35 seconds
+[0m18:29:35.056090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044f2810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105652360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105651860>]}
+[0m18:29:35.056217 [debug] [MainThread]: Flushing usage events
+[0m21:18:07.151004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102c39550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046779d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104677c50>]}
+
+
+============================== 21:18:07.153976 | bda3a2c8-50e8-4869-ba24-0cff1f5c57e4 ==============================
+[0m21:18:07.153976 [info ] [MainThread]: Running with dbt=1.8.8
+[0m21:18:07.154201 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'dbt/logs', 'debug': 'False', 'profiles_dir': './dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run --project-dir ./dbt', 'send_anonymous_usage_stats': 'True'}
+[0m21:18:07.302560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bda3a2c8-50e8-4869-ba24-0cff1f5c57e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d46190>]}
+[0m21:18:07.317992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bda3a2c8-50e8-4869-ba24-0cff1f5c57e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046fb790>]}
+[0m21:18:07.318431 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m21:18:07.326653 [debug] [MainThread]: checksum: ec53e341a936509427e16df1c646386a84befec52c1957e3f4359fbc36fc93f5, vars: {}, profile: , target: , version: 1.8.8
+[0m21:18:07.373067 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m21:18:07.373299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bda3a2c8-50e8-4869-ba24-0cff1f5c57e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053ea950>]}
+[0m21:18:07.661780 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m21:18:07.662031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'bda3a2c8-50e8-4869-ba24-0cff1f5c57e4', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104482b70>]}
+[0m21:18:07.774072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bda3a2c8-50e8-4869-ba24-0cff1f5c57e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056ecd70>]}
+[0m21:18:07.810149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bda3a2c8-50e8-4869-ba24-0cff1f5c57e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105522000>]}
+[0m21:18:07.810335 [info ] [MainThread]: Found 1 model, 5 data tests, 1 source, 423 macros
+[0m21:18:07.810457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bda3a2c8-50e8-4869-ba24-0cff1f5c57e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057fc950>]}
+[0m21:18:07.811062 [info ] [MainThread]: 
+[0m21:18:07.811258 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m21:18:07.811569 [debug] [ThreadPool]: Acquiring new postgres connection 'list_tradepulse'
+[0m21:18:07.864871 [debug] [ThreadPool]: Using postgres connection "list_tradepulse"
+[0m21:18:07.865028 [debug] [ThreadPool]: On list_tradepulse: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "connection_name": "list_tradepulse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m21:18:07.865115 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:18:07.901681 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.037 seconds
+[0m21:18:07.902242 [debug] [ThreadPool]: On list_tradepulse: Close
+[0m21:18:07.902492 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_tradepulse, now create_tradepulse_marts_marts)
+[0m21:18:07.902628 [debug] [ThreadPool]: Creating schema "database: "tradepulse"
+schema: "marts_marts"
+"
+[0m21:18:07.904299 [debug] [ThreadPool]: Using postgres connection "create_tradepulse_marts_marts"
+[0m21:18:07.904402 [debug] [ThreadPool]: On create_tradepulse_marts_marts: BEGIN
+[0m21:18:07.904482 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:18:07.914944 [debug] [ThreadPool]: SQL status: BEGIN in 0.010 seconds
+[0m21:18:07.915064 [debug] [ThreadPool]: Using postgres connection "create_tradepulse_marts_marts"
+[0m21:18:07.915153 [debug] [ThreadPool]: On create_tradepulse_marts_marts: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "connection_name": "create_tradepulse_marts_marts"} */
+create schema if not exists "marts_marts"
+[0m21:18:07.916415 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.001 seconds
+[0m21:18:07.916742 [debug] [ThreadPool]: On create_tradepulse_marts_marts: COMMIT
+[0m21:18:07.916841 [debug] [ThreadPool]: Using postgres connection "create_tradepulse_marts_marts"
+[0m21:18:07.916923 [debug] [ThreadPool]: On create_tradepulse_marts_marts: COMMIT
+[0m21:18:07.919103 [debug] [ThreadPool]: SQL status: COMMIT in 0.002 seconds
+[0m21:18:07.919193 [debug] [ThreadPool]: On create_tradepulse_marts_marts: Close
+[0m21:18:07.919596 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_tradepulse_marts_marts, now list_tradepulse_marts_marts)
+[0m21:18:07.921322 [debug] [ThreadPool]: Using postgres connection "list_tradepulse_marts_marts"
+[0m21:18:07.921419 [debug] [ThreadPool]: On list_tradepulse_marts_marts: BEGIN
+[0m21:18:07.921499 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m21:18:07.928475 [debug] [ThreadPool]: SQL status: BEGIN in 0.007 seconds
+[0m21:18:07.928611 [debug] [ThreadPool]: Using postgres connection "list_tradepulse_marts_marts"
+[0m21:18:07.928716 [debug] [ThreadPool]: On list_tradepulse_marts_marts: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "connection_name": "list_tradepulse_marts_marts"} */
+select
+      'tradepulse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'marts_marts'
+    union all
+    select
+      'tradepulse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'marts_marts'
+    union all
+    select
+      'tradepulse' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'marts_marts'
+  
+[0m21:18:07.932477 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.004 seconds
+[0m21:18:07.932919 [debug] [ThreadPool]: On list_tradepulse_marts_marts: ROLLBACK
+[0m21:18:07.933189 [debug] [ThreadPool]: On list_tradepulse_marts_marts: Close
+[0m21:18:07.934895 [debug] [MainThread]: Using postgres connection "master"
+[0m21:18:07.935018 [debug] [MainThread]: On master: BEGIN
+[0m21:18:07.935105 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:18:07.940212 [debug] [MainThread]: SQL status: BEGIN in 0.005 seconds
+[0m21:18:07.940355 [debug] [MainThread]: Using postgres connection "master"
+[0m21:18:07.940489 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m21:18:07.944787 [debug] [MainThread]: SQL status: SELECT 0 in 0.004 seconds
+[0m21:18:07.945257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bda3a2c8-50e8-4869-ba24-0cff1f5c57e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a34730>]}
+[0m21:18:07.945437 [debug] [MainThread]: On master: ROLLBACK
+[0m21:18:07.945706 [debug] [MainThread]: Using postgres connection "master"
+[0m21:18:07.945802 [debug] [MainThread]: On master: BEGIN
+[0m21:18:07.946214 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m21:18:07.946309 [debug] [MainThread]: On master: COMMIT
+[0m21:18:07.946394 [debug] [MainThread]: Using postgres connection "master"
+[0m21:18:07.946479 [debug] [MainThread]: On master: COMMIT
+[0m21:18:07.946704 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m21:18:07.946801 [debug] [MainThread]: On master: Close
+[0m21:18:07.946965 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:18:07.947081 [info ] [MainThread]: 
+[0m21:18:07.948395 [debug] [Thread-1 (]: Began running node model.at_trade_pulse.trade_index
+[0m21:18:07.948609 [info ] [Thread-1 (]: 1 of 1 START sql table model marts_marts.trade_index ........................... [RUN]
+[0m21:18:07.948784 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_tradepulse_marts_marts, now model.at_trade_pulse.trade_index)
+[0m21:18:07.948898 [debug] [Thread-1 (]: Began compiling node model.at_trade_pulse.trade_index
+[0m21:18:07.951575 [debug] [Thread-1 (]: Writing injected SQL for node "model.at_trade_pulse.trade_index"
+[0m21:18:07.951987 [debug] [Thread-1 (]: Began executing node model.at_trade_pulse.trade_index
+[0m21:18:07.966870 [debug] [Thread-1 (]: Writing runtime sql for node "model.at_trade_pulse.trade_index"
+[0m21:18:07.967205 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m21:18:07.967311 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: BEGIN
+[0m21:18:07.967405 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m21:18:07.974955 [debug] [Thread-1 (]: SQL status: BEGIN in 0.008 seconds
+[0m21:18:07.975126 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m21:18:07.975263 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "model.at_trade_pulse.trade_index"} */
+
+  
+    
+
+  create  table "tradepulse"."marts_marts"."trade_index__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- dbt model: unpivot raw stats into an analytics-ready trade_index table.
+
+
+with raw_data as (
+    -- Load raw rows as ingested from the CSV.
+    select
+        period_key,
+        nace_key,
+        uidxnom,
+        uidxreal,
+        beschidx,
+        uidxnsb,
+        uidxrsb,
+        ingested_at
+    from raw.statat_trade_raw
+),
+
+normalized as (
+    -- Unpivot each metric into a unified (period, nace, metric, value) row.
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'uidxnom' as metric,
+        uidxnom as value,
+        ingested_at
+    from raw_data
+    where uidxnom is not null
+
+    union all
+
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'uidxreal' as metric,
+        uidxreal as value,
+        ingested_at
+    from raw_data
+    where uidxreal is not null
+
+    union all
+
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'beschidx' as metric,
+        beschidx as value,
+        ingested_at
+    from raw_data
+    where beschidx is not null
+
+    union all
+
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'uidxnsb' as metric,
+        uidxnsb as value,
+        ingested_at
+    from raw_data
+    where uidxnsb is not null
+
+    union all
+
+    select
+        to_date(replace(period_key, 'TIIDX-', ''), 'YYYYMM') as period_date,
+        replace(nace_key, 'NACEIDX-', '') as nace_code,
+        'uidxrsb' as metric,
+        uidxrsb as value,
+        ingested_at
+    from raw_data
+    where uidxrsb is not null
+)
+
+select
+    -- Final selection filters any rows missing a period_date.
+    period_date,
+    nace_code,
+    metric,
+    value,
+    ingested_at
+from normalized
+where period_date is not null
+  );
+  
+[0m21:18:07.992821 [debug] [Thread-1 (]: SQL status: SELECT 12555 in 0.017 seconds
+[0m21:18:07.995294 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m21:18:07.995422 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "model.at_trade_pulse.trade_index"} */
+alter table "tradepulse"."marts_marts"."trade_index__dbt_tmp" rename to "trade_index"
+[0m21:18:07.995855 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.000 seconds
+[0m21:18:08.001738 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: COMMIT
+[0m21:18:08.001864 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m21:18:08.001968 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: COMMIT
+[0m21:18:08.003667 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m21:18:08.005538 [debug] [Thread-1 (]: Applying DROP to: "tradepulse"."marts_marts"."trade_index__dbt_backup"
+[0m21:18:08.007138 [debug] [Thread-1 (]: Using postgres connection "model.at_trade_pulse.trade_index"
+[0m21:18:08.007254 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: /* {"app": "dbt", "dbt_version": "1.8.8", "profile_name": "at_trade_pulse", "target_name": "dev", "node_id": "model.at_trade_pulse.trade_index"} */
+drop table if exists "tradepulse"."marts_marts"."trade_index__dbt_backup" cascade
+[0m21:18:08.007598 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.000 seconds
+[0m21:18:08.008409 [debug] [Thread-1 (]: On model.at_trade_pulse.trade_index: Close
+[0m21:18:08.008915 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bda3a2c8-50e8-4869-ba24-0cff1f5c57e4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103bb5b30>]}
+[0m21:18:08.009132 [info ] [Thread-1 (]: 1 of 1 OK created sql table model marts_marts.trade_index ...................... [[32mSELECT 12555[0m in 0.06s]
+[0m21:18:08.009363 [debug] [Thread-1 (]: Finished running node model.at_trade_pulse.trade_index
+[0m21:18:08.009915 [debug] [MainThread]: Using postgres connection "master"
+[0m21:18:08.010026 [debug] [MainThread]: On master: BEGIN
+[0m21:18:08.010116 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m21:18:08.015269 [debug] [MainThread]: SQL status: BEGIN in 0.005 seconds
+[0m21:18:08.015410 [debug] [MainThread]: On master: COMMIT
+[0m21:18:08.015500 [debug] [MainThread]: Using postgres connection "master"
+[0m21:18:08.015582 [debug] [MainThread]: On master: COMMIT
+[0m21:18:08.015835 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m21:18:08.015979 [debug] [MainThread]: On master: Close
+[0m21:18:08.016142 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:18:08.016240 [debug] [MainThread]: Connection 'model.at_trade_pulse.trade_index' was properly closed.
+[0m21:18:08.016351 [info ] [MainThread]: 
+[0m21:18:08.016462 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.21 seconds (0.21s).
+[0m21:18:08.016701 [debug] [MainThread]: Command end result
+[0m21:18:08.026085 [info ] [MainThread]: 
+[0m21:18:08.026293 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:18:08.026403 [info ] [MainThread]: 
+[0m21:18:08.026508 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m21:18:08.031159 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.90644526, "process_user_time": 1.009912, "process_kernel_time": 0.175987, "process_mem_max_rss": "139968512", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m21:18:08.031340 [debug] [MainThread]: Command `dbt run` succeeded at 21:18:08.031306 after 0.91 seconds
+[0m21:18:08.031489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10536ead0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055ad150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104698830>]}
+[0m21:18:08.031624 [debug] [MainThread]: Flushing usage events

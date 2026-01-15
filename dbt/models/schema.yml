@@ -1,0 +1,28 @@
+version: 2
+
+# dbt tests validate basic expectations about the model columns.
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: statat_trade_raw
+
+models:
+  - name: trade_index
+    description: "Unpivoted trade indices from raw ingestion."
+    columns:
+      - name: period_date
+        tests:
+          - not_null
+      - name: nace_code
+        tests:
+          - not_null
+      - name: metric
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["uidxnom", "uidxreal", "beschidx", "uidxnsb", "uidxrsb"]
+      - name: value
+        tests:
+          - not_null

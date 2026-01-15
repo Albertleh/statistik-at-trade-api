@@ -1,0 +1,14 @@
+# dbt project configuration for modeling marts tables.
+name: at_trade_pulse
+version: 1.0
+config-version: 2
+
+profile: at_trade_pulse
+
+model-paths: ["models"]
+
+models:
+  at_trade_pulse:
+    # Store models in the marts schema as tables.
+    +materialized: table
+    +schema: marts
